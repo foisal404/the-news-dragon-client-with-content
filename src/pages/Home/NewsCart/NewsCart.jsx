@@ -1,5 +1,4 @@
 import moment from "moment";
-import React from "react";
 import { Image } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
@@ -17,6 +16,8 @@ const NewsCart = ({ data }) => {
     thumbnail_url,
     rating,
   } = data;
+
+  
   return (
     <div>
       <Card className="my-4">
