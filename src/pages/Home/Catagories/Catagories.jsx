@@ -12,9 +12,9 @@ const Catagories = () => {
         .then(res=>res.json())
         .then(data=>setNam(data))
     },[])
-    console.log(nam);
+    // console.log(nam);
     const categoryName=nam?.find(fi=>fi.id===id)
-    console.log(categoryName);
+    // console.log(categoryName);
     return (
         <div>
             {/* <h2>{id}</h2> */}
