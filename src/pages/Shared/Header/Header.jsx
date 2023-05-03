@@ -7,7 +7,7 @@ import NavigationBar from '../NavigationBar/NavigationBar';
 
 const Header = () => {
     return (
-        <Container className='mt-4'>
+        <Container className='my-3'>
             <div className="text-center">
                 <img src={logo} alt="" />
                 <p className='text-secondary'><small>Journalism Without Fear or Favor</small></p>
