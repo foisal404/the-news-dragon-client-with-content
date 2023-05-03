@@ -8,7 +8,7 @@ const Catagories = () => {
 
     const [nam,setNam]=useState([])
     useEffect(()=>{
-        fetch(`http://localhost:5000/categories`)
+        fetch(`https://the-news-dragon-server-foisal404.vercel.app/categories`)
         .then(res=>res.json())
         .then(data=>setNam(data))
     },[])
