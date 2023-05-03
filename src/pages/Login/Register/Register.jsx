@@ -10,7 +10,7 @@ const Register = () => {
         const from =event.target;
         const name=from.name.value;
         const photo=from.photo.value;
-        const password=from.name.value;
+        const password=from.password.value;
         const email=from.email.value;
         // console.log(name,photo,password,email);
         signUp(email,password)
@@ -18,6 +18,7 @@ const Register = () => {
             const createdUser=result.user;
             console.log(createdUser);
         })
+
         .catch(error=>{
             console.error(error.message);
         })
@@ -36,13 +37,14 @@ const Register = () => {
                         <input type="text" className="form-control " name="photo"  id="exampleInputEmail2" aria-describedby="emailHelp" required/>
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-                        <input type="password" className="form-control" name="password"  id="exampleInputPassword1" required />
-                    </div>
-                    <div className="mb-3">
                         <label htmlFor="exampleInputEmail3" className="form-label">Email address</label>
                         <input type="email" className="form-control " name="email"  id="exampleInputEmail3" aria-describedby="emailHelp" required/>
                     </div>
+                    <div className="mb-3">
+                        <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                        <input type="password" className="form-control" name="password"  id="exampleInputPassword1" required />
+                    </div>
+
                     <div className="mb-3 form-check">
                         <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                         <label className="form-check-label" htmlFor="exampleCheck1">Accept Term & Conditions</label>

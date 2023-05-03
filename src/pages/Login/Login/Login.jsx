@@ -4,15 +4,22 @@ import { Link } from "react-router-dom";
 import { authContext } from "../../../provider/AuthProvider/AuthProvider";
 
 const Login = () => {
-    const {name}=useContext(authContext)
+    const {signIn}=useContext(authContext)
 
     const handlerForm=event=>{
         event.preventDefault();
         const form=event.target;
         const email=form.email.value;
         const password=form.password.value;
-        // console.log(email,password);
-        
+        console.log(email,password);
+        signIn(email,password)
+        .then(result=>{
+            const inUser=result.user;
+            console.log(inUser);
+        })
+        .catch(error=>{
+            console.error(error.message);
+        })
     }
   return (
     <Container className="w-50 mx-auto my-5 border border-2 rounded p-5" onSubmit={handlerForm}>
