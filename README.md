@@ -1,2 +1,2 @@
 ## The-News-Dragon-Client
-[Firebase deployes server ](https://the-news-dragonii.web.app)
+[Firebase deployes client ](https://the-news-dragonii.web.app)
